@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "Hola desde Railway"
+    return """
+<h1>Hola desde Railway</h1>
+<p>"El que tenga miedo a morir que no nazca" – Balazo</p>
+"""
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
